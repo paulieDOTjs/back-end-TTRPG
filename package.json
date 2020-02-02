@@ -8,7 +8,7 @@
     "start:prod": "node server.js",
     "start:dev": "nodemon server.js"
   },
-  "author": "",
+  "author": "Paul Hendrickson",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",

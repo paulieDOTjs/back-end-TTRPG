@@ -5,6 +5,7 @@ const passport = require("passport");
 
 const users = require("./routes/api/users");
 const games = require("./routes/api/games");
+const maps = require("./routes/api/maps");
 
 const app = express();
 
@@ -46,6 +47,7 @@ app.get("/ping", (req, res) => res.sendStatus(200));
 
 app.use("/api/v1/users", users);
 app.use("/api/v1/games", games);
+app.use("/api/v1/maps", maps);
 
 app.use("*", (req, res) => res.sendStatus(404));
 
