@@ -22,5 +22,19 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.9.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulrobhendrickson/back-end-TTRPG.git"
+  },
+  "keywords": [
+    "ttrpg",
+    "dnd",
+    "backend"
+  ],
+  "bugs": {
+    "url": "https://github.com/paulrobhendrickson/back-end-TTRPG/issues"
+  },
+  "homepage": "https://github.com/paulrobhendrickson/back-end-TTRPG#readme"
 }
