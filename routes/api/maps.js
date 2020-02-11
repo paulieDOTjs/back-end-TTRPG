@@ -12,8 +12,32 @@ router.post("/", (req, res) => {
 });
 
 router.get("/", (req, res) => {
-  console.log(req.body);
   Maps.find({}).then(MapData => {
+    console.log(MapData);
+    res.json({ MapData });
+  });
+});
+
+router.get("/public", (req, res) => {
+  console.log(req.body);
+  Maps.find({ private: false }).then(MapData => {
+    console.log(MapData);
+    res.json({ MapData });
+  });
+});
+
+router.get("/id/:id", (req, res) => {
+  console.log(req.params.id);
+  Maps.find({ _id: req.params.id }).then(MapData => {
+    console.log(MapData);
+    res.json({ MapData });
+  });
+});
+
+router.get("/user/:user", (req, res) => {
+  console.log(req.params.user);
+  Maps.find({ savedBy: req.params.user }).then(MapData => {
+    console.log(MapData);
     res.json({ MapData });
   });
 });

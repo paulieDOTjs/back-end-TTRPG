@@ -19,6 +19,10 @@ const MapSchema = new Schema({
     type: String,
     required: false
   },
+  savedBy: {
+    type: String,
+    required: false
+  },
   private: {
     type: Boolean,
     required: true
