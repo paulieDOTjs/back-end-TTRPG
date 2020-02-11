@@ -15,6 +15,10 @@ const MapSchema = new Schema({
     type: String,
     required: true
   },
+  editedBy: {
+    type: String,
+    required: false
+  },
   private: {
     type: Boolean,
     required: true
