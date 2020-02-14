@@ -34,6 +34,16 @@ router.get("/id/:id", (req, res) => {
   });
 });
 
+router.delete("/id/:id", (req, res) => {
+  console.log('hiiiiiiiiiiii')
+  console.log(req.params.id);
+
+  Maps.findByIdAndRemove(req.params.id).then(MapData => {
+    console.log(MapData);
+    res.json({ MapData });
+  });
+});
+
 router.get("/user/:user", (req, res) => {
   console.log(req.params.user);
   Maps.find({ savedBy: req.params.user }).then(MapData => {
