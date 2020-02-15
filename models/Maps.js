@@ -16,7 +16,7 @@ const MapSchema = new Schema({
     required: true
   },
   editedBy: {
-    type: String,
+    type: Array,
     required: false
   },
   savedBy: {
